@@ -2,4 +2,4 @@ const sayHello=()=>{
     return "hello";
 }
 
-export default sayHello
+export default sayHello;
