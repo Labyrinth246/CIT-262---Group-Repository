@@ -1,0 +1,17 @@
+
+{
+"dependencies": {
+    "mocha": "^9.1.4",
+    "jest": "^27.4.7",
+    "config": "^3.3.1",
+    "cross-env": "^7.0.2",
+    "node-fetch": "^2.6.1",
+    "request-promise-native": "^1.0.8"
+},
+  "scripts": {
+      "test": "mocha",
+      "test-dev": "cross-env NODE_ENV=development mocha",
+      "test-test": "cross-env NODE_ENV=test mocha",
+      "test-prod": "cross-env NODE_ENV=production mocha"
+  }
+}
