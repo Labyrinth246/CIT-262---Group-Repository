@@ -1,6 +1,7 @@
 #This is the main idea of this yaml file. YEET!
 
 steps:
+#this step builds the image
 - name: 'gcr.io/cloud-builders/docker'
   id: Build Docker Image
   args:
@@ -8,10 +9,13 @@ steps:
   - '.'
   - '-t'
   - 'grc.io/$PROJECT_ID/team1-api-test:latest'
-
-- name: 'gcr.io/cloud-builders/docker'
-  id: Push
-  args:
-  - 'push'
-  - 'grc.io/$PROJECT_ID/team1-api-test:latest'
   
+#this step pushes the image
+- name: 'gcr.io/cloud-builders/docker'
+  id: Push 
+  args: 
+  - 'push'
+  - 'gcr.io/$PROJECT_ID/team1-api-test:latest'
+
+
+
