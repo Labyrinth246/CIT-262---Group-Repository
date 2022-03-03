@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: jade-walker
-  template:
+  template: 
     metadata:
       labels:
         app: jade-walker
