@@ -8,7 +8,7 @@ steps:
   - 'build'
   - '.'
   - '-t'
-  - 'grc.io/$PROJECT_ID/team1-api-test:latest'
+  - 'gcr.io/$PROJECT_ID/team1-api-test:latest'
   
 #this step pushes the image
 - name: 'gcr.io/cloud-builders/docker'
