@@ -3,7 +3,7 @@ import config from 'config';
 import assert from 'assert';
 
 
-const loginUrl = config.get("pitch59-url") + "/api/account/login";
+const loginUrl = config.get("pitch59-url");
 
 it(`Testing to see if we can signin`, async () => {
   let options = {
@@ -12,8 +12,8 @@ it(`Testing to see if we can signin`, async () => {
       "content-type": "application/json"
     },
     body: JSON.stringify({
-      emailId: "myfriend@gmail.com",
-      password: "YoDaddy"
+      emailId: "p59testa@gmail.com",
+      password: "P@ssw0rd"
     })
   };
 

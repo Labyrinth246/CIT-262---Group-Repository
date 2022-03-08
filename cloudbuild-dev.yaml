@@ -16,6 +16,3 @@ steps:
   args: 
   - 'push'
   - 'gcr.io/$PROJECT_ID/team1-api-test:latest'
-
-
-
